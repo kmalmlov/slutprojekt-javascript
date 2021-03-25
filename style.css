@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Train+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  background-image:url(./dog.jpg);
+}
+
+
+.top h1 {
+  padding: 5rem;
+  font-size: 4rem;
+}
+
+
+header {
+  background: linear-gradient(#fff,#f1e8d8);
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+.header h1 {
+  margin: 20px 0 10px 0;
+  color: #000;
+  font-size: 5rem;
+}
+.header select {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slideshow {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.9s ease-out;*/
+}
+
+.slide:nth-last-child(2) {
+  opacity: 1;
+  transform: scale(1.08);
+}
+h2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#f1e8d8,#fff);
+}
+
+
+
+main h1{
+font-family: 'Playfair Display', serif;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 2px #333 solid;
+  background: #fff;
+  border-radius: 10px;
+}
+
+form button {
+  color: #f1e8d8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: #333;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  padding: 0 0 0 2rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #fff;
+  border: none;
+  color: #f1e8d8;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.complete-btn .fas {
+  color: rgb(53, 167, 53);
+  pointer-events: none;
+}
+
+.trash-btn .fas {
+  color: rgb(196, 7, 7);
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
